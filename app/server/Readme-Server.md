@@ -50,11 +50,16 @@ You can change the port in **.env** file
 
 ### Todo:
 
-- Typescript
-- Morgan
 - Cors
+- Dotenv
+- ESlint
 - ErrorHandlers
 - Swagger
+- MVC
+- Graphql
+- Postgres
+- Mongodb
+- REST API
 
 
 #### Enabling TSLint with Vscode Workspace :

@@ -4,7 +4,9 @@
         "moduleResolution": "node",
         "module": "commonjs",
         "allowJs": true,
-        "target": "es6"
+        "target": "es6",
+        "esModuleInterop": false,
+        "strict": true
     },
     "include": [
         "./src/**/*",
@@ -21,7 +23,7 @@
 // strict - is an option that enables strict type-checking options
 // noImplicitAny -
 // allowJS
-// noEmit
+// noEmit - true which prevents typescript from generating any files - just the type checking
 // strict -
 // moduleResolution -
 // sourceMap

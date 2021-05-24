@@ -1,7 +1,8 @@
 import * as bodyParser from 'body-parser';
 import * as express from 'express';
 import * as path from 'path';
-
+import { morganMiddleware } from './config';
+import { logger } from './lib';
 
 export class App {
 
@@ -32,7 +33,7 @@ export class App {
         }else{
 
             // if prod (TODO)
-            this.app.use(express.static(path.join(process.cwd(), 'public')));
+            this.app.use(express.static(path.join(process.cwd(), 'dist'), { maxAge: '7d' })); // set the static files location /public/img will be /img for users
 
         }
 
@@ -57,6 +58,10 @@ export class App {
            type: 'application/vnd.api+json'
        }));
 
+       /**
+        * use morgan
+        */
+       this.app.use(morganMiddleware);
 
        /**
         * init reoute
@@ -72,7 +77,8 @@ export class App {
         * Start the server
         */
        this.app.listen(process.env.PORT, () => {
-        console.log('The server is running in port localhost : ', process.env.PORT); // tslint:disable-line
+          // console.log('The server is running in port localhost : ', process.env.PORT); // tslint:disable-line
+          logger.info(`The server is running in port localhost : http://localhost:${process.env.PORT}`)
        });
 
     }
