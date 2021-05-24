@@ -1,5 +1,6 @@
 import * as bodyParser from 'body-parser';
-import * as express from 'express';
+import chalk from 'chalk';
+import express from 'express';
 import * as path from 'path';
 import { morganMiddleware } from './config';
 import { logger } from './lib';
@@ -78,7 +79,7 @@ export class App {
         */
        this.app.listen(process.env.PORT, () => {
           // console.log('The server is running in port localhost : ', process.env.PORT); // tslint:disable-line
-          logger.info(`The server is running in port localhost : http://localhost:${process.env.PORT}`)
+          logger.info(chalk.yellowBright(`The server is running in port localhost : http://localhost:${process.env.PORT}`))
        });
 
     }

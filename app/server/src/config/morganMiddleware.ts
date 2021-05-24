@@ -1,4 +1,5 @@
-import * as morgan from 'morgan';
+import chalk from 'chalk';
+import morgan from 'morgan';
 import { isDevelopment } from '../env';
 import { logger } from '../lib';
 
@@ -8,7 +9,7 @@ const loggerStream: morgan.StreamOptions = {
 }
 
 const morganMiddleware = morgan(
-    ':method :url :status :res[content-length]- :response-time ms\n: query',
+    chalk.yellow(':method :url :status :res[content-length]- :response-time ms'),
     { stream: loggerStream, skip: () => !isDevelopment},
 )
 
