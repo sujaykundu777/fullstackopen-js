@@ -1,5 +1,5 @@
 # fullstackopen-js
-Full stack web app using JS stack
+Full stack web app boilerplate using JS stack
 
 Tech Stack :
 
@@ -14,10 +14,13 @@ Backend:
 - Typescript
 - Graphql
 - REST
+- Swagger
+- Mocha/Cja
 
-Tests:
-- ESlint
-- Jest
+Other:
+- ESLint
+- Yarn
+- Babel
 
 Database:
 - Postgres
@@ -37,3 +40,7 @@ Architechture:
 Integrations
 - Social Authentication
 - Payment Integration
+
+Tutorials :
+
+[Setup Typescript with Node.js](https://sujaykundu.com/blog/setting-up-typescript-with-nodejs-project/)
