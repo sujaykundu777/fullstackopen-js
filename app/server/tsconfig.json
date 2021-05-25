@@ -1,17 +1,31 @@
 {
     "compilerOptions": {
-        "outDir": "./dist",
-        "moduleResolution": "node",
-        "module": "commonjs",
         "allowJs": true,
-        "target": "es6",
-        "esModuleInterop": true,
-        "strict": true
+        "lib": ["es2016","esnext.asynciterable"], /* Libraries to be included in the compilation */
+        "types": ["node"], /* list of names to contain type definitions */
+        "target": "es2016", /* ECMASCript version of the target */
+        "module": "commonjs", /* specify module code generation */
+        "moduleResolution": "node", /* How to interpret the module */
+        "outDir": "./dist", /* output directory */
+        "strict": true, /* enable strict type checking option */
+        "emitDecoratorMetadata": true, /* Send design-type metadata for decorator declaration to source */
+        "experimentalDecorators": true, /* enabled for ES decorators */
+        "sourceMap": true, /* Use Source Map */
+        "allowSyntheticDefaultImports": true, /* Allow default imports from modules without default export */
+        "esModuleInterop": true, /*'require' and'import' compatible */
+        "skipLibCheck": true, /* Omit type checking of all declaration files (*.d.ts) */
+        "resolveJsonModule": true, /* Include modules imported with .json extension */
     },
     "include": [
         "./src/**/*",
         "index.ts"
-    ]
+    ],
+    "exclude": [
+        "node_modules",
+        "src/test",
+        "**/*.spec.ts",
+        "**/*.test.ts",
+      ]
 }
 
 
@@ -24,6 +38,6 @@
 // noImplicitAny -
 // allowJS
 // noEmit - true which prevents typescript from generating any files - just the type checking
-// strict -
+// strict - strict typechecking
 // moduleResolution -
 // sourceMap

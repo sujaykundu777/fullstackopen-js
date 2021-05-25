@@ -52,7 +52,8 @@ You can change the port in **.env** file
 
 - Cors
 - Dotenv
-- ESlint
+- Prettier
+- Husky
 - ErrorHandlers
 - Swagger
 - MVC

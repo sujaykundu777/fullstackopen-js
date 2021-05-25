@@ -1,13 +1,14 @@
 import * as bodyParser from 'body-parser';
 import chalk from 'chalk';
-import express from 'express';
+import express, { Application, NextFunction, Request, Response } from 'express';
 import * as path from 'path';
 import { morganMiddleware } from './config';
 import { logger } from './lib';
 
+
 export class App {
 
-    protected app: express.Application
+    protected app: Application
 
     constructor(NODE_ENV: string = 'development', PORT: any){
 
@@ -67,10 +68,10 @@ export class App {
        /**
         * init reoute
         */
-       this.app.get('/api/v1', (req, res) => {
+       this.app.get('/api/v1', (req: Request, res: Response, next: NextFunction) => {
            res.status(200).send({
                "success": true,
-               "message": "You hit Backend API Server... !"
+               "message": "You hit Backend API Server again... !"
            });
        });
 
