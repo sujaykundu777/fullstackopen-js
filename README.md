@@ -7,6 +7,7 @@ Frontend:
 - React
 - Redux
 - Typescript
+- Jest
 
 Backend:
 - Nodejs
@@ -15,9 +16,7 @@ Backend:
 - Graphql
 - REST
 - Swagger
-- Mocha/Cja
-
-Other:
+- Mocha,Chai
 - ESLint
 - Yarn
 - Babel
@@ -43,4 +42,5 @@ Integrations
 
 Tutorials :
 
-[Setup Typescript with Node.js](https://sujaykundu.com/blog/setting-up-typescript-with-nodejs-project/)
+- [Setup Typescript with Node.js](https://sujaykundu.com/blog/setting-up-typescript-with-nodejs-project/)
+- [Setting up a custom logger for node express typescript server](https://sujaykundu.com/blog/setting-up-custom-logger-for-node-express-typescript-server/)
