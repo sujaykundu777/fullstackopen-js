@@ -1,7 +1,7 @@
 import chalk from 'chalk';
 import morgan from 'morgan';
 import { isDevelopment } from '../env';
-import { logger } from '../lib';
+import logger from '../lib';
 
 const loggerStream: morgan.StreamOptions = {
   write: (message) => logger.http(message.substring(0, message.lastIndexOf('\n'))),

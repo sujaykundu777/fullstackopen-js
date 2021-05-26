@@ -1,7 +1,10 @@
-// transpile all require statements using babel
-require('@babel/register')({ extensions: ['.js', '.ts'] }); // tslint:disable-line
+// eslint-disable-next-line import/first
+import App from './app';
+import { env } from './env';
 
-import * as Server from './app';
-const server = new Server.App('development', 3001);
+// transpile all require statements using babel
+// require('@babel/register')({ extensions: ['.js', '.ts'] });
+
+const server = new App(env, 3001);
 
 export default server;

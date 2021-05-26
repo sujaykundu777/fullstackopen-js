@@ -1,3 +1,3 @@
 import morganMiddleware from './morganMiddleware';
 
-export { morganMiddleware };
+export default morganMiddleware;

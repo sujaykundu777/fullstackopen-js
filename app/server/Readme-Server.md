@@ -51,9 +51,9 @@ You can change the port in **.env** file
 ### Todo:
 
 - Cors
-- Dotenv
+- Dotenv (done)
 - Prettier (done)
-- Husky
+- Husky (partial)
 - ErrorHandlers
 - Swagger
 - MVC
@@ -87,6 +87,8 @@ So for Eslint rules, we use the following guides:
 [Eslint Airbnb base](https://www.npmjs.com/package/eslint-config-airbnb-base)
 
 
+
 Recommended Rules :
 
 - [import/extentions](https://github.com/benmosher/eslint-plugin-import/blob/v2.23.3/docs/rules/extensions.md) - Ensure consistent use of file extension within the import path (value can be : never || always || ignorePackages) - Only use always if you want to have extentions while importing, otherwise use never.
+- [Import Resolver Typescript](https://github.com/alexgorbatchev/eslint-import-resolver-typescript)

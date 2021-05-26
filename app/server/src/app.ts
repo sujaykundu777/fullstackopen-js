@@ -2,23 +2,14 @@ import * as bodyParser from 'body-parser';
 import chalk from 'chalk';
 import express, { Application, Request, Response } from 'express';
 import * as path from 'path';
-import { morganMiddleware } from './config';
-import { logger } from './lib';
+import morganMiddleware from './config';
+import { env, port } from './env';
+import logger from './lib';
 
 export default class App {
   protected app: Application;
 
-  constructor(NODE_ENV = 'development', PORT: any) {
-    /**
-     * Setting environment for development | production
-     */
-    process.env.NODE_ENV = process.env.NODE_ENV || NODE_ENV;
-
-    /**
-     * Setting port number
-     */
-    process.env.PORT = process.env.PORT || PORT;
-
+  constructor(NODE_ENV = env, PORT = port) {
     /**
      * Create our app w/ express
      */
@@ -75,7 +66,7 @@ export default class App {
      */
     this.app.listen(process.env.PORT, () => {
       // console.log('The server is running in port localhost : ', process.env.PORT); // tslint:disable-line
-      logger.info(chalk.yellowBright(`The server is running in port localhost : http://localhost:${process.env.PORT}`));
+      logger.info(chalk.yellowBright(`The server is running in port localhost : http://localhost:${PORT}`));
     });
   }
 }
