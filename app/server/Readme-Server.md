@@ -14,7 +14,7 @@ Compiles the files (precompiling our assets) and saves in dist folder
 
 Install typescript and tslint globally:
 
-`npm install -g typescript tslint`
+`npm install -g typescript tslint eslint`
 
 If using typescript (.ts):
 
@@ -52,7 +52,7 @@ You can change the port in **.env** file
 
 - Cors
 - Dotenv
-- Prettier
+- Prettier (done)
 - Husky
 - ErrorHandlers
 - Swagger
@@ -63,7 +63,7 @@ You can change the port in **.env** file
 - REST API
 
 
-#### Enabling TSLint with Vscode Workspace :
+#### Enabling TSLint with Vscode Workspace (optional) - prefer ESLint as TSlint is deprecated:
 
 Press Ctrl+Shift+P to open command pallete.
 
@@ -75,3 +75,18 @@ Enter.`
 From the menu that replaces the input, pick
 
 `Enable Workspace Library Execution`
+
+
+### Styleguide
+
+This project uses Airbnb Styleguide for linting [https://github.com/airbnb/javascript](https://github.com/airbnb/javascript)
+
+So for Eslint rules, we use the following guides:
+
+[Eslint Prettier](https://github.com/prettier/eslint-config-prettier)
+[Eslint Airbnb base](https://www.npmjs.com/package/eslint-config-airbnb-base)
+
+
+Recommended Rules :
+
+- [import/extentions](https://github.com/benmosher/eslint-plugin-import/blob/v2.23.3/docs/rules/extensions.md) - Ensure consistent use of file extension within the import path (value can be : never || always || ignorePackages) - Only use always if you want to have extentions while importing, otherwise use never.
