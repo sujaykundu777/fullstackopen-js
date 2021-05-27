@@ -1,6 +1,6 @@
 import assert from 'assert';
 import http from 'http';
-import server from '../src/index';
+import server from '../src/index.ts';
 
 
 describe('Server should be running at PORT 3001', () => {

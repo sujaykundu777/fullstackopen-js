@@ -3,5 +3,5 @@
 
 cd app
 cd server
-npm test
-npm prettify
+yarn lint:fix
+yarn prettify
