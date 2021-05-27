@@ -57,7 +57,7 @@ export default class App {
     this.app.get('/api/v1', (req: Request, res: Response) => {
       res.status(200).send({
         success: true,
-        message: 'You hit Backend API Server again... !',
+        message: 'You hit Backend API Server again.... !',
       });
     });
 
