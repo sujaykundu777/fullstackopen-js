@@ -3,5 +3,6 @@
 
 cd app
 cd server
-yarn lint:fix
-yarn prettify
+npx lint-staged
+# yarn lint:fix
+# yarn prettify

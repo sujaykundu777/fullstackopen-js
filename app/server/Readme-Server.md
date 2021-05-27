@@ -50,10 +50,12 @@ You can change the port in **.env** file
 
 ### Todo:
 
-- Cors
+
 - Dotenv (done)
 - Prettier (done)
-- Husky (partial)
+- Husky (done)
+- Lint-staged
+- Cors
 - ErrorHandlers
 - Swagger
 - MVC
