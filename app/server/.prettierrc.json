@@ -3,5 +3,7 @@
     "arrowParens": "always",
     "printWidth": 120,
     "parser": "typescript",
-    "trailingComma": "all"
+    "trailingComma": "all",
+    "semi": true,
+    "useTabs": true
   }

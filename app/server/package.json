@@ -60,13 +60,12 @@
     "lint-staged": "^11.0.0",
     "mocha": "^8.4.0",
     "prettier": "2.3.0",
-    "pretty-quick": "^3.1.0",
     "ts-node": "^10.0.0",
     "ts-node-dev": "^1.1.6",
     "tslib": "^2.2.0",
     "typescript": "^4.2.4"
   },
   "lint-staged": {
-    "src/**/*": "pretty-quick --staged && prettier --config .prettierrc.json --write src/**/*.ts"
+    "src/**/*": "prettier --config .prettierrc.json --write src/**/*.ts"
   }
 }
