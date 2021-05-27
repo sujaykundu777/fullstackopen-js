@@ -66,7 +66,7 @@ export default class App {
      */
     this.app.listen(process.env.PORT, () => {
       // console.log('The server is running in port localhost : ', process.env.PORT); // tslint:disable-line
-      logger.info(chalk.yellowBright(`The server is running in port localhost : http://localhost:${PORT}`));
+      logger.info(chalk.yellowBright(`The server is running at localhost : http://localhost:${PORT}`));
     });
   }
 }
