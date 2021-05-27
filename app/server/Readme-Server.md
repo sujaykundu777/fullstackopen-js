@@ -1,9 +1,8 @@
 ### Backend Server
 
-#### Build
+Fullstackopen-js Node.js Express Typescript Server
 
 Compiles the files (precompiling our assets) and saves in dist folder
-
 #### Run tests
 
 `$ yarn test`
@@ -14,7 +13,7 @@ Compiles the files (precompiling our assets) and saves in dist folder
 
 Install typescript and tslint globally:
 
-`npm install -g typescript tslint eslint`
+`npm install -g typescript eslint`
 
 If using typescript (.ts):
 
@@ -50,11 +49,7 @@ You can change the port in **.env** file
 
 ### Todo:
 
-
-- Dotenv (done)
-- Prettier (done)
-- Husky (done)
-- Lint-staged
+- Lerna
 - Cors
 - ErrorHandlers
 - Swagger
@@ -62,8 +57,6 @@ You can change the port in **.env** file
 - Graphql
 - Postgres
 - Mongodb
-- REST API
-
 
 #### Enabling TSLint with Vscode Workspace (optional) - prefer ESLint as TSlint is deprecated:
 
@@ -89,8 +82,7 @@ So for Eslint rules, we use the following guides:
 [Eslint Airbnb base](https://www.npmjs.com/package/eslint-config-airbnb-base)
 
 
-
-Recommended Rules :
+Recommended Eslint Rules :
 
 - [import/extentions](https://github.com/benmosher/eslint-plugin-import/blob/v2.23.3/docs/rules/extensions.md) - Ensure consistent use of file extension within the import path (value can be : never || always || ignorePackages) - Only use always if you want to have extentions while importing, otherwise use never.
 - [Import Resolver Typescript](https://github.com/alexgorbatchev/eslint-import-resolver-typescript)
