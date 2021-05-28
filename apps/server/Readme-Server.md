@@ -50,6 +50,7 @@ You can change the port in **.env** file
 ### Todo:
 
 - Lerna
+- Jsdocs
 - Cors
 - ErrorHandlers
 - Swagger

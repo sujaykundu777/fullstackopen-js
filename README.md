@@ -1,7 +1,7 @@
 # fullstackopen-js
 Full stack web app boilerplate using JS stack.
 
-This project has a monorepo architecture managed using [Lerna](https://github.com/lerna/lerna)
+This project follows a monorepo-based architecture.
 
 Tech Stack :
 
@@ -10,6 +10,7 @@ Frontend (Client) :
 - Redux
 - Typescript
 - Jest
+- Bit
 
 Backend (Server):
 - Nodejs
@@ -34,13 +35,10 @@ CI/CD:
 - Kubernetes
 - AWS
 
-Architechture:
-- Microservices
-- Multi-tenant
-
 Integrations
 - Social Authentication
-- Payment Integration
+- RBAC
+- Payment Integration (Stripe, Razorpay)
 
 Tutorials :
 

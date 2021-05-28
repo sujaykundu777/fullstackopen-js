@@ -1,7 +1,7 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-cd app
+cd apps
 cd server
 npx lint-staged
 # yarn lint:fix

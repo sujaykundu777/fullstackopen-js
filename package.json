@@ -3,6 +3,6 @@
     "husky": "^6.0.0"
   },
   "scripts": {
-    "prepare": "husky install app/server/.husky"
+    "prepare": "husky install apps/server/.husky"
   }
 }
