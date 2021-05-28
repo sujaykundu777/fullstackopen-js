@@ -1,8 +1,22 @@
 {
-  "devDependencies": {
-    "husky": "^6.0.0"
-  },
-  "scripts": {
-    "prepare": "husky install apps/server/.husky"
-  }
+	"name": "fullstackopen-js",
+	"private": true,
+	"version": "0.0.1",
+	"workspaces": [
+		"packages/*"
+	],
+	"scripts": {
+		"server": "yarn workspace fullstackopen-server start",
+		"client": "yarn workspace fullstackopen-client start",
+		"start": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+		"prepare": "husky install packages/server-api/.husky",
+		"lint": "lerna run lint --scope=fullstackopen-server"
+	},
+	"devDependencies": {
+		"husky": "^6.0.0",
+		"lerna": "^4.0.0"
+	},
+	"dependencies": {
+		"concurrently": "^6.2.0"
+	}
 }

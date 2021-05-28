@@ -1,7 +1,15 @@
 # fullstackopen-js
 Full stack web app boilerplate using JS stack.
 
-This project follows a monorepo-based architecture.
+This project follows a monorepo-based architecture managed using [Lerna](https://github.com/lerna/lerna)
+
+
+Install all dependencies and run app:
+
+`cd fullstackopen-js`
+`yarn install`
+`yarn start`
+
 
 Tech Stack :
 
@@ -39,6 +47,13 @@ Integrations
 - Social Authentication
 - RBAC
 - Payment Integration (Stripe, Razorpay)
+
+Architechture :
+
+-fullstackopen-js
+--/packages
+---/web-client  (React Client)
+---/server-api  (Express Server)
 
 Tutorials :
 

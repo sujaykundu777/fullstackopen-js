@@ -1,8 +1,8 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-cd apps
-cd server
+cd packages
+cd server-api
 npx lint-staged
 # yarn lint:fix
 # yarn prettify

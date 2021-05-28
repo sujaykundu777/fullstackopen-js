@@ -11,7 +11,7 @@
     "dev-ts": "ts-node-dev --inspect --watch -- ./src/index.ts",
     "start:debug": "node --inspect-brk=5858 ./dist/index.js",
     "build-ts": "yarn lint:fix && tsc",
-    "start-ts": "yarn build-ts && nodemon src/index.ts",
+    "start": "yarn build-ts && nodemon src/index.ts",
     "serve-ts": "yarn build-ts && ts-node ./dist/index.js",
     "build-js": "babel src -d dist",
     "start-js": "nodemon src/index.js --exec babel-node",
