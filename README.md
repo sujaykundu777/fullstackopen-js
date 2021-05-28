@@ -1,7 +1,7 @@
 # fullstackopen-js
 Full stack web app boilerplate using JS stack.
 
-This project follows a monorepo-based architecture managed using [Lerna](https://github.com/lerna/lerna)
+This project follows a monorepo-based architecture
 
 ### Run App:
 
@@ -9,17 +9,24 @@ This project follows a monorepo-based architecture managed using [Lerna](https:/
 cd fullstackopen-js  # move to app dir
 yarn install         # install dependencies
 yarn lint            # run lint
-yarn start					 # run app
+yarn start           # run app
 ```
 
 ### Architechture :
 
+```
 -fullstackopen-js
 --/packages
 ---/web-client  (React Client)
 ---/server-api  (Express Server)
+```
 
 ### Tech Stack :
+
+
+Workflow
+- Yarn Workspaces
+- Lerna
 
 Frontend (Client) :
 - React
@@ -60,7 +67,10 @@ Integrations
 
 Tutorials :
 
+- [Setting up Yarn Workspace and Lerna](coming soon)
+- [Creating Express Server](coming soon)
 - [Setup Typescript with Node.js](https://sujaykundu.com/blog/setting-up-typescript-with-nodejs-project/)
 - [Setting up a custom logger for node express typescript server](https://sujaykundu.com/blog/setting-up-custom-logger-for-node-express-typescript-server/)
 - [Setting up code linting using ESLint and Prettier](https://sujaykundu.com/blog/adding-linting-to-express-typescript-server-using-eslint/)
 - [Configuring code linting rules using ESLint, Editorconfig, and Husky](https://sujaykundu.com/blog/configuring-code-quality-and-rules-using-eslint-editorconfig-and-husky/)
+- [Setting up React Client from scratch](coming soon)
