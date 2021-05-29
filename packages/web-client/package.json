@@ -11,7 +11,7 @@
 		"test": "nothing",
 		"build": "webpack --mode development",
 		"build:prod": "webpack",
-    "start": "webpack serve --mode development"
+    "start": "webpack serve --mode development --progress"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.3",
