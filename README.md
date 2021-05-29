@@ -72,11 +72,10 @@ Integrations
 
 Tutorials :
 
-- [Setting up Yarn Workspace and Lerna](coming soon)
-- [Creating Express Server](coming soon)
-- [Setup Typescript with Node.js](https://sujaykundu.com/blog/setting-up-typescript-with-nodejs-project/)
+- [Configuring up Yarn Workspace and Lerna](https://sujaykundu.com/blog/configuring-monorepo-with-yarn-workspaces-and-lerna/)
+- [Creating server using Node, Express, Typescript](https://sujaykundu.com/blog/setting-up-typescript-with-nodejs-project/)
 - [Setting up a custom logger for node express typescript server](https://sujaykundu.com/blog/setting-up-custom-logger-for-node-express-typescript-server/)
 - [Setting up code linting using ESLint and Prettier](https://sujaykundu.com/blog/adding-linting-to-express-typescript-server-using-eslint/)
 - [Configuring code linting rules using ESLint, Editorconfig, and Husky](https://sujaykundu.com/blog/configuring-code-quality-and-rules-using-eslint-editorconfig-and-husky/)
-- [Setting up React Client from scratch](coming soon)
+- [Setting up React Client from scratch](https://sujaykundu.com/blog/setting-up-react-client-from-scratch/)
 - [Setting up Typescript with React](coming soon)
