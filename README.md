@@ -29,10 +29,9 @@ Tooling
 - Yarn Workspaces
 - Lerna
 - Typescript
-- Jest
 - ESLint
 - Prettier
-- React
+- Editorconfig
 
 Frontend (Client) :
 - React
