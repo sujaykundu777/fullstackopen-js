@@ -5,5 +5,5 @@
     "parser": "typescript",
     "trailingComma": "all",
     "semi": true,
-    "useTabs": true
+    "useTabs": false
   }

@@ -6,6 +6,7 @@
 		"packages/*"
 	],
 	"scripts": {
+    "server:lint": "yarn workspace fullstackopen-server prettify",
 		"server": "yarn workspace fullstackopen-server start",
 		"client": "yarn workspace fullstackopen-client start",
 		"start": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
