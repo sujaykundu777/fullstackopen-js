@@ -1,10 +1,10 @@
 # fullstackopen-js
-Full stack web app boilerplate using JS stack.
+Full stack web app boilerplate using JS stack.The goal of this project is to have a complete setup required for building mordern
+web applications using Javascript stack.
 
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 
-This project follows a monorepo-based architecture
-
+This project follows a monorepo-based architecture.
 ### Run App:
 
 ```sh
@@ -44,8 +44,7 @@ Backend (Server):
 - Nodejs
 - Express
 - Typescript
-- Graphql
-- REST
+- Apollo Graphql Server
 - Swagger
 - Mocha,Chai
 - ESLint
