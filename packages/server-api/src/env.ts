@@ -17,4 +17,14 @@ const isDevelopment: boolean = env === 'development';
  */
 const port = process.env.PORT || 3001;
 
-export { env, isDevelopment, port };
+/**
+ * Set cors url
+ */
+const corsUrl = process.env.CORS_URL;
+
+/**
+ * Set log directory
+ */
+const logDirectory = process.env.LOG_DIR;
+
+export { env, isDevelopment, port, corsUrl, logDirectory };
