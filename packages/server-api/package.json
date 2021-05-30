@@ -1,5 +1,5 @@
 {
-  "name": "fullstackopen-server",
+  "name": "@fullstackopenjs/server",
   "version": "1.0.0",
   "description": "Full stack open webapp Server",
   "main": "dist/index.js",
@@ -24,15 +24,18 @@
     "@babel/node": "^7.14.2",
     "@babel/register": "^7.13.16",
     "@babel/runtime": "^7.14.0",
+    "apollo-server": "^2.25.0",
     "body-parser": "^1.19.0",
     "chalk": "^4.1.1",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "graphql": "^15.5.0",
     "morgan": "^1.10.0",
     "morgan-body": "^2.6.5",
     "nodemon": "^2.0.7",
-    "winston": "^3.3.3"
+    "winston": "^3.3.3",
+    "winston-daily-rotate-file": "^4.5.5"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",

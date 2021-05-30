@@ -1,9 +1,10 @@
 import * as bodyParser from 'body-parser';
 import chalk from 'chalk';
+import cors from 'cors';
 import express, { Application, Request, Response } from 'express';
 import * as path from 'path';
 import morganMiddleware from './config';
-import { env, port } from './env';
+import { corsUrl, env, port } from './env';
 import logger from './lib';
 
 export default class App {
@@ -43,6 +44,16 @@ export default class App {
     this.app.use(
       bodyParser.json({
         type: 'application/vnd.api+json',
+      }),
+    );
+
+    /**
+     * CORS
+     */
+    this.app.use(
+      cors({
+        origin: corsUrl,
+        optionsSuccessStatus: 200,
       }),
     );
 
