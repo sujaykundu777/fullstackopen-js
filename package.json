@@ -6,12 +6,12 @@
 		"packages/*"
 	],
 	"scripts": {
-    "server:lint": "yarn workspace fullstackopen-server prettify",
-		"server": "yarn workspace fullstackopen-server start",
-		"client": "yarn workspace fullstackopen-client start",
+    "server:lint": "yarn workspace @fullstackopenjs/server prettify",
+		"server": "yarn workspace @fullstackopenjs/server start",
+		"client": "yarn workspace @fullstackopenjs/client start",
 		"start": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
 		"prepare": "husky install packages/server-api/.husky",
-		"lint": "lerna run lint --scope=fullstackopen-server"
+		"lint": "lerna run lint --scope=@fullstackopenjs/server"
 	},
 	"devDependencies": {
 		"husky": "^6.0.0",
