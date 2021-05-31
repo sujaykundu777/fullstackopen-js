@@ -1,11 +1,12 @@
-import * as bodyParser from 'body-parser';
 import chalk from 'chalk';
 import cors from 'cors';
 import express, { Application, Request, Response } from 'express';
 import * as path from 'path';
 import morganMiddleware from './config';
+import './db';
 import { corsUrl, env, port } from './env';
 import logger from './lib';
+import todoRouter from './routes/todo';
 
 export default class App {
   protected app: Application;
@@ -28,7 +29,7 @@ export default class App {
      * parse application/x-www-form-urlencoded
      */
     this.app.use(
-      bodyParser.urlencoded({
+      express.urlencoded({
         extended: true,
       }),
     );
@@ -36,13 +37,13 @@ export default class App {
     /**
      * parse application/json
      */
-    this.app.use(bodyParser.json());
+    this.app.use(express.json());
 
     /**
      * parse application/vnd.api+json as json
      */
     this.app.use(
-      bodyParser.json({
+      express.json({
         type: 'application/vnd.api+json',
       }),
     );
@@ -63,7 +64,7 @@ export default class App {
     this.app.use(morganMiddleware);
 
     /**
-     * init reoute
+     * init route
      */
     this.app.get('/api/v1', (req: Request, res: Response) => {
       res.status(200).send({
@@ -71,6 +72,11 @@ export default class App {
         message: 'You hit Backend API Server again... !',
       });
     });
+
+    /**
+     * use routes
+     */
+    this.app.use(todoRouter);
 
     /**
      * Start the server
