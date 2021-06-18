@@ -8,11 +8,25 @@ This project follows a monorepo-based architecture.
 ### Run App:
 
 ```sh
-cd fullstackopen-js  # move to app dir
-yarn install         # install dependencies
-yarn lint            # run lint
-yarn start           # run app
+$ cd fullstackopen-js  # move to app dir
+$ yarn install         # install dependencies
+$ yarn lint            # run lint
+$ yarn start           # run app
 ```
+To run client or server individually :
+
+```sh
+$ yarn client
+$ yarn server
+```
+### Adding packages :
+In case you want to add or update packages:
+
+For server based packages :
+`lerna add -D 'packagename' --scope '@fullstackopenjs/server`
+
+For client based packages:
+`lerna add -D 'packagename' --scope '@fullstackopenjs/client'`
 
 ### Architechture :
 
@@ -37,6 +51,7 @@ Frontend (Client) :
 - React
 - Redux
 - Typescript
+- TailwindCSS
 - Jest
 - Bit
 
@@ -77,4 +92,5 @@ Tutorials :
 - [Setting up code linting using ESLint and Prettier](https://sujaykundu.com/blog/adding-linting-to-express-typescript-server-using-eslint/)
 - [Configuring code linting rules using ESLint, Editorconfig, and Husky](https://sujaykundu.com/blog/configuring-code-quality-and-rules-using-eslint-editorconfig-and-husky/)
 - [Setting up React Client from scratch](https://sujaykundu.com/blog/setting-up-react-client-from-scratch/)
-- [Setting up Typescript with React](coming soon)
+- [Setting up Typescript with React](https://sujaykundu.com/blog/steps-to-configure-typecript-with-react-client/)
+- [Setting up Tailwind with React](coming soon)

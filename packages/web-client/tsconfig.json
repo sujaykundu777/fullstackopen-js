@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "outDir": "./dist/", // put the compiled code in to dist folder
+    "rootDir": "src", // compile every .ts file located in the src
+    "noImplicitAny": true,
+    "module": "commonJS",
+    "lib": [
+      "dom",
+      "ES2015"
+    ],
+    "target": "es2016",
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true // its better import perf for webpack
+  },
+  "include": ["src/**/*"],  // inclue files that are in the src directory
+  "exclude": ["node_modules", ".vscode"] // exclude files from compiling
+}
